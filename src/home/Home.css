@@ -1,0 +1,214 @@
+/* Home.css */
+
+/* Base Styles */
+:root {
+  --primary: #4361ee;
+  --primary-light: #4895ef;
+  --secondary: #3f37c9;
+  --dark: #1a1a2e;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+  --transition: all 0.3s ease;
+}
+
+.divs{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark);
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--gray);
+}
+
+.highlight {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.hero-image {
+  max-height: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.section-title {
+  position: relative;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  text-align: center;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+/* Level Cards */
+.level-card {
+  transition: var(--transition);
+  border-width: 2px !important;
+}
+
+.level-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.level-icon {
+  font-size: 2.5rem;
+}
+
+/* Year Cards */
+.year-card {
+  transition: var(--transition);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.year-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.year-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Feature Cards */
+.feature-card {
+  transition: var(--transition);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(67, 97, 238, 0.1);
+  border-radius: 50%;
+}
+
+.feature-icon {
+  font-size: 1.75rem;
+  color: var(--primary);
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  transition: var(--transition);
+  border: none;
+  background-color: white;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark);
+}
+
+.footer a {
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.footer a:hover {
+  color: var(--primary-light) !important;
+}
+
+.social-links i {
+  font-size: 1.25rem;
+  transition: var(--transition);
+}
+
+.social-links i:hover {
+  color: var(--primary-light);
+}
+
+/* Hover Effect */
+.hover-effect {
+  transition: var(--transition);
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .hero-image {
+    margin-top: 2rem;
+    max-height: 300px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .level-card, .year-card, .feature-card {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  .year-number {
+    font-size: 1.25rem;
+  }
+}

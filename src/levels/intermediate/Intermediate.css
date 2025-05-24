@@ -1,0 +1,148 @@
+/* Intermediate.css */
+
+.intermediate-page {
+    background-color: #f8f9fa;
+  }
+  
+  /* Hero Section */
+  .intermediate-hero {
+    background: linear-gradient(135deg, #f48c06 0%, #faa307 100%);
+    color: white;
+    padding: 4rem 0;
+  }
+  
+  .intermediate-hero .btn-warning {
+    background-color: white;
+    color: #f48c06;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .intermediate-hero .btn-warning:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Title */
+  .section-title {
+    position: relative;
+    padding-bottom: 15px;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #f48c06, #faa307);
+  }
+  
+  /* Focus Cards */
+  .focus-card {
+    background-color: white;
+    border-radius: 8px;
+    border-left: 4px solid #f48c06;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .focus-card:hover, .focus-card.active {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff8e6;
+  }
+  
+  .focus-card.active {
+    border-left: 4px solid #dc2f02;
+  }
+  
+  /* Concept Cards */
+  .concept-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .concept-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .concept-icon {
+    font-size: 2rem;
+    color: #f48c06;
+  }
+  
+  /* Project Cards */
+  .project-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tech-tags .badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+  }
+  
+  /* Resource Cards */
+  .resource-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resource-icon {
+    font-size: 2rem;
+    color: #f48c06;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .intermediate-hero {
+      padding: 3rem 0;
+    }
+    
+    .intermediate-hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .section-title::after {
+      width: 60px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .intermediate-page {
+      padding-top: 70px;
+    }
+    
+    .intermediate-hero {
+      padding: 2.5rem 0;
+    }
+    
+    .intermediate-hero h1 {
+      font-size: 2rem;
+    }
+    
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }

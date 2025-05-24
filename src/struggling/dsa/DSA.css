@@ -1,0 +1,161 @@
+:root {
+  --primary: #4361ee;
+  --primary-light: #4895ef;
+  --secondary: #3f37c9;
+  --dark: #1a1a2e;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+  --transition: all 0.3s ease;
+}
+
+.dsa-page {
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.dsa-hero {
+  background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
+  color: white;
+  padding: 5rem 0;
+}
+
+/* Level Tabs */
+.level-tabs {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.level-tabs .nav-link {
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  color: var(--dark);
+  transition: var(--transition);
+}
+
+.level-tabs .nav-link.active {
+  background-color: var(--primary);
+  color: white;
+}
+
+.level-tabs .nav-link:not(.active):hover {
+  color: var(--primary);
+}
+
+/* Topic Cards */
+.topic-card {
+  transition: var(--transition);
+  border: none;
+  border-radius: 10px;
+}
+
+.topic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Learning Path Card */
+.learning-path-card {
+  border: none;
+  border-radius: 10px;
+  position: sticky;
+  top: 20px;
+}
+
+.list-group-item {
+  padding: 0.75rem 1.25rem;
+  border-left: none;
+  border-right: none;
+}
+
+.list-group-item:first-child {
+  border-top: none;
+}
+
+/* Platform Cards */
+.platform-card {
+  transition: var(--transition);
+  border-radius: 10px;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.platform-icon {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+/* Section Title */
+.section-title {
+  position: relative;
+  padding-bottom: 15px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+.text-center .section-title::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .dsa-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .learning-path-card {
+    position: static;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .dsa-hero {
+    padding: 4rem 0;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .level-tabs .nav-link {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .dsa-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .level-tabs {
+    flex-direction: column;
+    border-radius: 10px;
+  }
+  
+  .level-tabs .nav-link {
+    border-radius: 10px;
+    margin-bottom: 0.25rem;
+  }
+}

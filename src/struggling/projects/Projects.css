@@ -1,0 +1,25 @@
+body {
+  background-color: #f4f6f8;
+  font-family: "Segoe UI", sans-serif;
+}
+
+h1 {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.card {
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #34495e;
+}

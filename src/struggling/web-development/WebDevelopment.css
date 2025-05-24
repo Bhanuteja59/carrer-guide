@@ -1,0 +1,147 @@
+:root {
+  --primary: #4361ee;
+  --primary-light: #4895ef;
+  --secondary: #3f37c9;
+  --dark: #1a1a2e;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+  --transition: all 0.3s ease;
+}
+
+.webdev-page {
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.webdev-hero {
+  background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
+  color: white;
+  padding: 5rem 0;
+}
+
+/* Learning Path */
+.learning-stage {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.stage-number {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stage-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+/* Topic Cards */
+.topic-card {
+  transition: var(--transition);
+  border: none;
+  border-radius: 10px;
+}
+
+.topic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.concepts .badge {
+  font-weight: 500;
+}
+
+/* Project Ideas */
+.project-level-card {
+  transition: var(--transition);
+  border-radius: 10px;
+}
+
+.project-level-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Tools Section */
+.tool-card {
+  transition: var(--transition);
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+}
+
+.tool-icon {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+/* Section Title */
+.section-title {
+  position: relative;
+  padding-bottom: 15px;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .webdev-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .stage-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .webdev-hero {
+    padding: 4rem 0;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .stage-number {
+    width: 40px;
+    height: 40px;
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .webdev-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+  }
+  
+  .btn-lg {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,62 @@
+/* Sticky header styles */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1050; /* High enough to stay above content */
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+  }
+  
+  /* Navbar links */
+  .nav-link {
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+  
+  .nav-link:hover {
+    background-color: #e7f1ff; /* Light blue hover effect */
+    color: #0d6efd;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* List styling reset */
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Menu for mobile */
+  .header__menu {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Mobile-specific styles */
+  @media (max-width: 991.98px) {
+    .header__menu {
+      width: 100%;
+    }
+  
+    .header__menu ul {
+      padding-left: 0;
+      margin-top: 10px;
+    }
+  
+    .header__menu .nav-link {
+      display: block;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  /* Responsive auth buttons */
+  @media (max-width: 767.98px) {
+    .btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

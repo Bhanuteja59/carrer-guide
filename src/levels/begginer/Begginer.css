@@ -1,0 +1,174 @@
+/* Begginer.css - Custom Styles for Beginner's Page */
+
+/* Base Styles */
+.begginer-page {
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  position: relative;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+
+/* Hero Section */
+.begginer-hero {
+  background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
+  color: white;
+  padding: 80px;
+}
+
+.begginer-hero .btn-primary {
+  background-color: white;
+  color: #4361ee;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.begginer-hero .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Tech Cards */
+.tech-card {
+  background-color: white;
+  border-radius: 8px;
+  border-left: 4px solid #4361ee;
+  transition: all 0.3s ease;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Resource Cards */
+.resource-card {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 10px;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resource-icon {
+  font-size: 2rem;
+  color: #4361ee;
+}
+
+/* Project Cards */
+.project-card {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.skills-tags .badge {
+  font-weight: 500;
+  padding: 0.35em 0.65em;
+}
+
+/* Tool Cards */
+.tool-card {
+  background-color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tool-icon {
+  font-size: 2rem;
+  color: #4361ee;
+}
+
+/* Community Cards */
+.community-card {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 10px;
+}
+
+.community-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.community-icon {
+  font-size: 1.75rem;
+  color: #4361ee;
+}
+
+/* YouTube Channel Cards */
+.channel-card {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.channel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.channel-avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #4361ee;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .begginer-hero {
+    padding: 3rem 0;
+  }
+  
+  .begginer-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .section-title::after {
+    width: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .begginer-page {
+    padding-top: 70px;
+  }
+  
+  .begginer-hero {
+    padding: 2.5rem 0;
+  }
+  
+  .begginer-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
